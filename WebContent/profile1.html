@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="profile.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"type="text/css"
+	href="css/lightgallery.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -22,7 +24,7 @@
 						<div class="card-content white-text center-align">
 
 							<p>
-								<img src="people.png" class="img-size">
+								<img src="images/people.png" class="img-size">
 							</p>
 							<h3 class="center-align">Er.Rohit Gupta</h3>
 
@@ -113,7 +115,7 @@
 										<div class="tab-pane active center-align" id="a">
 
 											<p>
-												<img src="people.png" class="img-size">
+												<img src="images/people.png" class="img-size">
 											</p>
 											<h2>Er.Rohit Gupta</h2>
 											<p>I am an open-minded individual with a proven track
@@ -126,7 +128,7 @@
 										<div class="tab-pane" id="b">
 											<div class="card bg-white content-padding">
 												<div class="pull-right">
-													<img src="people.png" class="img-size">
+													<img src="images/people.png" class="img-size">
 												</div>
 												<h1>&nbsp;&nbsp;&nbsp;Er. Rohit Gupta</h1>
 												<h4>
@@ -151,7 +153,31 @@
 											</div>
 										</div>
 										<div class="tab-pane" id="c"></div>
-										<div class="tab-pane" id="d"></div>
+										<div class="tab-pane" id="d">
+										<div class="col-sm-3 sidenav bg-white">
+										  
+										  <ul class="tab pull-left center-align">
+										  <li class="active design designs"><a href="#a" data-toggle="tab"><span
+												class="see-pro">Introduction</span></a></li>
+										<li class="design"><a href="#b" data-toggle="tab"><span
+												class="see-pro">Resume</span></a></li>
+										<li class="design"><a href="#c" data-toggle="tab"><span
+												class="see-pro">Area</span></a></li>
+										  
+										  </ul>
+										  
+										</div>
+										
+										<div id="lightgallery">
+										 <a href="images/1.jpg"><img src="images/1.jpg"class="img-size card" /></a>
+										 <a href="images/2.jpg"><img src="images/2.jpg"class="img-size card" /></a>
+										 <a href="images/3.jpg"><img src="images/3.jpg"class="img-size card" /></a>
+										 <a href="images/banneer2 copy.jpg"><img src="images/banneer2 copy.jpg"class="img-size card" /></a>
+										 <a href="images/Bitmap in Graphic1.jpg"><img src="images/Bitmap in Graphic1.jpg"class="img-size card" /></a>
+										 <a href="images/demo1 (2).jpg"><img src="images/demo1 (2).jpg"class="img-size card" /></a>
+										</div>
+										
+										</div>
 										<div class="tab-pane" id="e"></div>
 										<div class="tab-pane" id="f"></div>
 										<div class="tab-pane" id="g"></div>
@@ -182,5 +208,18 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/lg-fullscreen.min.js"></script>
+	<script src="js/lg-thumbnail.min.js"></script>
+	<script src="js/lightgallery-all.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+    	$('#lightgallery').lightGallery({
+    	    thumbnail:true,
+    	    animateThumb: false,
+    	    showThumbByDefault: false
+    	}); 
+    });
+</script>
 </body>
 </html>

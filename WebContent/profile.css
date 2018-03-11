@@ -54,7 +54,7 @@ body {
 	border-radius: 0 0 2px 2px;
 }
 
-.white-text {
+. white-text {
 	color: #fff;
 }
 #a,#b,#c,#d,#e,#f,#g,#h {
@@ -106,6 +106,12 @@ li a{
 	border-radius: 2px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 		rgba(0, 0, 0, 0.12);
+}
+.designs{
+	
+    padding: 7px 24px 8px 30px;
+    /* color: #000; */
+    margin: 0.5rem 0 1rem 0;
 }
 footer.page-footer .footer-copyright {
 	overflow: hidden;
